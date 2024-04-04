@@ -14,12 +14,9 @@ Projects0(ID, PID, SID) in BCNF
 -- Shows
 2.1 Important FDs:
 UID --> UN
-SID --> TI
-SID --> RA
-SID --> IMDB
+SID --> TI, RA, IMDB
 UID, SID --> S
 2.2 Decomposition and Normal Form:
 Shows1(UID, UN) in BCNF
-Shows2(SID, TI) in BCNF
-Shows3(SID, RA) in BCNF
-Shows4(SID, IMDB) in BCNF
+Shows2(SID, TI, RA, IMDB) in BCNF
+Shows0(UID, SID, S) in BCNF
