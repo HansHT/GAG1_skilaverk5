@@ -1,0 +1,25 @@
+-- Projects
+1.1 Important FDs:
+ID --> MID
+PID --> PN
+SID --> SN
+MID --> MN
+1.2 Decomposition and Normal Form:
+Projects1(MID, MN) in BCNF
+Projects2(ID, MID) in BCNF
+Projects3(PID, PN) in BCNF
+Projects4(SID, SN) in BCNF
+Projects0(ID, PID, SID) in BCNF
+
+-- Shows
+2.1 Important FDs:
+UID --> UN
+SID --> TI
+SID --> RA
+SID --> IMDB
+UID, SID --> S
+2.2 Decomposition and Normal Form:
+Shows1(UID, UN) in BCNF
+Shows2(SID, TI) in BCNF
+Shows3(SID, RA) in BCNF
+Shows4(SID, IMDB) in BCNF
