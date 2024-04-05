@@ -28,7 +28,19 @@ HID --> HS, HZ
 HZ --> HC
 PID, HID --> S
 2.2 Decomposition and Normal Form:
-Rentals1(PID, HID, PN)
-Rentals2(HID, HS, HZ)
-Rentals3(HZ, HC)
-Rentals0(PID, HID, S)
+Rentals1(PID, HID, PN) in BCNF
+Rentals2(HID, HS, HZ) in BCNF
+Rentals3(HZ, HC) in BCNF
+Rentals0(PID, HID, S) in BCNF
+
+-- Matches
+4.1 Important FDs:
+MID --> D, HID, AID, RID, H, A
+HID --> HN
+AID --> AN
+RID --> RN
+4.2 Decomposition and Normal Form:
+Matches1(MID, D, HID, AID, RID, H, A) in BCNF
+Matches2(HID, HN) in BCNF
+Matches3(AID, AN) in BCNF
+Matches4(RID, RN) in BCNF
