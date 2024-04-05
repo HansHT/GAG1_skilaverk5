@@ -20,3 +20,15 @@ UID, SID --> S
 Shows1(UID, UN) in BCNF
 Shows2(SID, TI, RA, IMDB) in BCNF
 Shows0(UID, SID, S) in BCNF
+
+-- Rentals
+3.1 Important FDs:
+PID --> HID, PN
+HID --> HS, HZ
+HZ --> HC
+PID, HID --> S
+2.2 Decomposition and Normal Form:
+Rentals1(PID, HID, PN)
+Rentals2(HID, HS, HZ)
+Rentals3(HZ, HC)
+Rentals0(PID, HID, S)
