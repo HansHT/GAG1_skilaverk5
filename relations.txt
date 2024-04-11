@@ -49,5 +49,5 @@ Matches4(RID, RN) in BCNF
 5.1 Important FDs:
 Z --> BL,T
 5.2 Decomposition and Normal Form:
-Boats1(Z,T)
-Boats0(BL,BNo,Z,BN,SSN)
+Boats1(Z,T) in BCNF
+Boats0(BL,BNo,Z,BN,SSN) in 3NF
