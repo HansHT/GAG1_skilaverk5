@@ -44,3 +44,10 @@ Matches1(MID, D, HID, AID, RID, H, A) in BCNF
 Matches2(HID, HN) in BCNF
 Matches3(AID, AN) in BCNF
 Matches4(RID, RN) in BCNF
+
+-- Boats
+5.1 Important FDs:
+Z --> BL,T
+5.2 Decomposition and Normal Form:
+Boats1(Z,T)
+Boats0(BL,BNo,Z,BN,SSN)

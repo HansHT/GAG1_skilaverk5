@@ -1,0 +1,330 @@
+
+SELECT 'Boats: BL --> BNo' AS FD,
+CASE WHEN COUNT(*)=0 THEN 'MAY HOLD'
+ELSE 'does not hold' END AS VALIDITY
+FROM (
+    SELECT X.BL
+    FROM Boats X
+    GROUP BY X.BL
+    HAVING COUNT(DISTINCT X.BNo) > 1
+);
+
+
+SELECT 'Boats: BL --> Z' AS FD,
+CASE WHEN COUNT(*)=0 THEN 'MAY HOLD'
+ELSE 'does not hold' END AS VALIDITY
+FROM (
+    SELECT X.BL
+    FROM Boats X
+    GROUP BY X.BL
+    HAVING COUNT(DISTINCT X.Z) > 1
+);
+
+
+SELECT 'Boats: BL --> T' AS FD,
+CASE WHEN COUNT(*)=0 THEN 'MAY HOLD'
+ELSE 'does not hold' END AS VALIDITY
+FROM (
+    SELECT X.BL
+    FROM Boats X
+    GROUP BY X.BL
+    HAVING COUNT(DISTINCT X.T) > 1
+);
+
+
+SELECT 'Boats: BL --> BN' AS FD,
+CASE WHEN COUNT(*)=0 THEN 'MAY HOLD'
+ELSE 'does not hold' END AS VALIDITY
+FROM (
+    SELECT X.BL
+    FROM Boats X
+    GROUP BY X.BL
+    HAVING COUNT(DISTINCT X.BN) > 1
+);
+
+
+SELECT 'Boats: BL --> SSN' AS FD,
+CASE WHEN COUNT(*)=0 THEN 'MAY HOLD'
+ELSE 'does not hold' END AS VALIDITY
+FROM (
+    SELECT X.BL
+    FROM Boats X
+    GROUP BY X.BL
+    HAVING COUNT(DISTINCT X.SSN) > 1
+);
+
+
+SELECT 'Boats: BNo --> BL' AS FD,
+CASE WHEN COUNT(*)=0 THEN 'MAY HOLD'
+ELSE 'does not hold' END AS VALIDITY
+FROM (
+    SELECT X.BNo
+    FROM Boats X
+    GROUP BY X.BNo
+    HAVING COUNT(DISTINCT X.BL) > 1
+);
+
+
+SELECT 'Boats: BNo --> Z' AS FD,
+CASE WHEN COUNT(*)=0 THEN 'MAY HOLD'
+ELSE 'does not hold' END AS VALIDITY
+FROM (
+    SELECT X.BNo
+    FROM Boats X
+    GROUP BY X.BNo
+    HAVING COUNT(DISTINCT X.Z) > 1
+);
+
+
+SELECT 'Boats: BNo --> T' AS FD,
+CASE WHEN COUNT(*)=0 THEN 'MAY HOLD'
+ELSE 'does not hold' END AS VALIDITY
+FROM (
+    SELECT X.BNo
+    FROM Boats X
+    GROUP BY X.BNo
+    HAVING COUNT(DISTINCT X.T) > 1
+);
+
+
+SELECT 'Boats: BNo --> BN' AS FD,
+CASE WHEN COUNT(*)=0 THEN 'MAY HOLD'
+ELSE 'does not hold' END AS VALIDITY
+FROM (
+    SELECT X.BNo
+    FROM Boats X
+    GROUP BY X.BNo
+    HAVING COUNT(DISTINCT X.BN) > 1
+);
+
+
+SELECT 'Boats: BNo --> SSN' AS FD,
+CASE WHEN COUNT(*)=0 THEN 'MAY HOLD'
+ELSE 'does not hold' END AS VALIDITY
+FROM (
+    SELECT X.BNo
+    FROM Boats X
+    GROUP BY X.BNo
+    HAVING COUNT(DISTINCT X.SSN) > 1
+);
+
+
+SELECT 'Boats: Z --> BL' AS FD,
+CASE WHEN COUNT(*)=0 THEN 'MAY HOLD'
+ELSE 'does not hold' END AS VALIDITY
+FROM (
+    SELECT X.Z
+    FROM Boats X
+    GROUP BY X.Z
+    HAVING COUNT(DISTINCT X.BL) > 1
+);
+
+
+SELECT 'Boats: Z --> BNo' AS FD,
+CASE WHEN COUNT(*)=0 THEN 'MAY HOLD'
+ELSE 'does not hold' END AS VALIDITY
+FROM (
+    SELECT X.Z
+    FROM Boats X
+    GROUP BY X.Z
+    HAVING COUNT(DISTINCT X.BNo) > 1
+);
+
+
+SELECT 'Boats: Z --> T' AS FD,
+CASE WHEN COUNT(*)=0 THEN 'MAY HOLD'
+ELSE 'does not hold' END AS VALIDITY
+FROM (
+    SELECT X.Z
+    FROM Boats X
+    GROUP BY X.Z
+    HAVING COUNT(DISTINCT X.T) > 1
+);
+
+
+SELECT 'Boats: Z --> BN' AS FD,
+CASE WHEN COUNT(*)=0 THEN 'MAY HOLD'
+ELSE 'does not hold' END AS VALIDITY
+FROM (
+    SELECT X.Z
+    FROM Boats X
+    GROUP BY X.Z
+    HAVING COUNT(DISTINCT X.BN) > 1
+);
+
+
+SELECT 'Boats: Z --> SSN' AS FD,
+CASE WHEN COUNT(*)=0 THEN 'MAY HOLD'
+ELSE 'does not hold' END AS VALIDITY
+FROM (
+    SELECT X.Z
+    FROM Boats X
+    GROUP BY X.Z
+    HAVING COUNT(DISTINCT X.SSN) > 1
+);
+
+
+SELECT 'Boats: T --> BL' AS FD,
+CASE WHEN COUNT(*)=0 THEN 'MAY HOLD'
+ELSE 'does not hold' END AS VALIDITY
+FROM (
+    SELECT X.T
+    FROM Boats X
+    GROUP BY X.T
+    HAVING COUNT(DISTINCT X.BL) > 1
+);
+
+
+SELECT 'Boats: T --> BNo' AS FD,
+CASE WHEN COUNT(*)=0 THEN 'MAY HOLD'
+ELSE 'does not hold' END AS VALIDITY
+FROM (
+    SELECT X.T
+    FROM Boats X
+    GROUP BY X.T
+    HAVING COUNT(DISTINCT X.BNo) > 1
+);
+
+
+SELECT 'Boats: T --> Z' AS FD,
+CASE WHEN COUNT(*)=0 THEN 'MAY HOLD'
+ELSE 'does not hold' END AS VALIDITY
+FROM (
+    SELECT X.T
+    FROM Boats X
+    GROUP BY X.T
+    HAVING COUNT(DISTINCT X.Z) > 1
+);
+
+
+SELECT 'Boats: T --> BN' AS FD,
+CASE WHEN COUNT(*)=0 THEN 'MAY HOLD'
+ELSE 'does not hold' END AS VALIDITY
+FROM (
+    SELECT X.T
+    FROM Boats X
+    GROUP BY X.T
+    HAVING COUNT(DISTINCT X.BN) > 1
+);
+
+
+SELECT 'Boats: T --> SSN' AS FD,
+CASE WHEN COUNT(*)=0 THEN 'MAY HOLD'
+ELSE 'does not hold' END AS VALIDITY
+FROM (
+    SELECT X.T
+    FROM Boats X
+    GROUP BY X.T
+    HAVING COUNT(DISTINCT X.SSN) > 1
+);
+
+
+SELECT 'Boats: BN --> BL' AS FD,
+CASE WHEN COUNT(*)=0 THEN 'MAY HOLD'
+ELSE 'does not hold' END AS VALIDITY
+FROM (
+    SELECT X.BN
+    FROM Boats X
+    GROUP BY X.BN
+    HAVING COUNT(DISTINCT X.BL) > 1
+);
+
+
+SELECT 'Boats: BN --> BNo' AS FD,
+CASE WHEN COUNT(*)=0 THEN 'MAY HOLD'
+ELSE 'does not hold' END AS VALIDITY
+FROM (
+    SELECT X.BN
+    FROM Boats X
+    GROUP BY X.BN
+    HAVING COUNT(DISTINCT X.BNo) > 1
+);
+
+
+SELECT 'Boats: BN --> Z' AS FD,
+CASE WHEN COUNT(*)=0 THEN 'MAY HOLD'
+ELSE 'does not hold' END AS VALIDITY
+FROM (
+    SELECT X.BN
+    FROM Boats X
+    GROUP BY X.BN
+    HAVING COUNT(DISTINCT X.Z) > 1
+);
+
+
+SELECT 'Boats: BN --> T' AS FD,
+CASE WHEN COUNT(*)=0 THEN 'MAY HOLD'
+ELSE 'does not hold' END AS VALIDITY
+FROM (
+    SELECT X.BN
+    FROM Boats X
+    GROUP BY X.BN
+    HAVING COUNT(DISTINCT X.T) > 1
+);
+
+
+SELECT 'Boats: BN --> SSN' AS FD,
+CASE WHEN COUNT(*)=0 THEN 'MAY HOLD'
+ELSE 'does not hold' END AS VALIDITY
+FROM (
+    SELECT X.BN
+    FROM Boats X
+    GROUP BY X.BN
+    HAVING COUNT(DISTINCT X.SSN) > 1
+);
+
+
+SELECT 'Boats: SSN --> BL' AS FD,
+CASE WHEN COUNT(*)=0 THEN 'MAY HOLD'
+ELSE 'does not hold' END AS VALIDITY
+FROM (
+    SELECT X.SSN
+    FROM Boats X
+    GROUP BY X.SSN
+    HAVING COUNT(DISTINCT X.BL) > 1
+);
+
+
+SELECT 'Boats: SSN --> BNo' AS FD,
+CASE WHEN COUNT(*)=0 THEN 'MAY HOLD'
+ELSE 'does not hold' END AS VALIDITY
+FROM (
+    SELECT X.SSN
+    FROM Boats X
+    GROUP BY X.SSN
+    HAVING COUNT(DISTINCT X.BNo) > 1
+);
+
+
+SELECT 'Boats: SSN --> Z' AS FD,
+CASE WHEN COUNT(*)=0 THEN 'MAY HOLD'
+ELSE 'does not hold' END AS VALIDITY
+FROM (
+    SELECT X.SSN
+    FROM Boats X
+    GROUP BY X.SSN
+    HAVING COUNT(DISTINCT X.Z) > 1
+);
+
+
+SELECT 'Boats: SSN --> T' AS FD,
+CASE WHEN COUNT(*)=0 THEN 'MAY HOLD'
+ELSE 'does not hold' END AS VALIDITY
+FROM (
+    SELECT X.SSN
+    FROM Boats X
+    GROUP BY X.SSN
+    HAVING COUNT(DISTINCT X.T) > 1
+);
+
+
+SELECT 'Boats: SSN --> BN' AS FD,
+CASE WHEN COUNT(*)=0 THEN 'MAY HOLD'
+ELSE 'does not hold' END AS VALIDITY
+FROM (
+    SELECT X.SSN
+    FROM Boats X
+    GROUP BY X.SSN
+    HAVING COUNT(DISTINCT X.BN) > 1
+);
+
